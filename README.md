@@ -15,7 +15,7 @@ Shift Baru: Shift C
 
 1. Tombol Tambah Mahasiswa
    
-  Pada halaman utama, terdapat tombol `Tambah Mahasiswa`. Ketika tombol ini diklik, akan membuka modal `Tambah Mahasiswa` dengan memanggil fungsi `openModal('add')`.
+   Pada halaman utama, terdapat tombol `Tambah Mahasiswa`. Ketika tombol ini diklik, akan membuka modal `Tambah Mahasiswa` dengan memanggil fungsi `openModal('add')`.
 
 2. Modal Tambah
 
@@ -33,7 +33,7 @@ Shift Baru: Shift C
 
 5. Feedback ke Pengguna
 
-  Jika penambahan data berhasil, sistem akan menampilkan pesan konfirmasi sukses dan memperbarui daftar mahasiswa dengan memanggil `getMahasiswa()`. Modal akan ditutup menggunakan `closeModal()`.
+   Jika penambahan data berhasil, sistem akan menampilkan pesan konfirmasi sukses dan memperbarui daftar mahasiswa dengan memanggil `getMahasiswa()`. Modal akan ditutup menggunakan `closeModal()`.
 
 ## Cara Kerja Read (Tampilkan Data Mahasiswa)
 
@@ -41,7 +41,7 @@ Shift Baru: Shift C
 
 1. Fungsi Get Mahasiswa
    
-  Ketika halaman `MahasiswaPage` pertama kali dimuat (fungsi `ngOnInit`), fungsi `getMahasiswa()` akan dipanggil untuk mengambil data dari server.
+   Ketika halaman `MahasiswaPage` pertama kali dimuat (fungsi `ngOnInit`), fungsi `getMahasiswa()` akan dipanggil untuk mengambil data dari server.
 
 2. Proses Pengambilan Data
 
@@ -61,7 +61,7 @@ Shift Baru: Shift C
 
 1. Tombol Edit
    
-  Setiap data mahasiswa yang ditampilkan memiliki tombol `Edit`. Ketika tombol ini diklik, fungsi `openModal('edit', item.id)` akan dipanggil dengan parameter `item.id` (ID dari data mahasiswa yang akan diedit).
+   Setiap data mahasiswa yang ditampilkan memiliki tombol `Edit`. Ketika tombol ini diklik, fungsi `openModal('edit', item.id)` akan dipanggil dengan parameter `item.id` (ID dari data mahasiswa yang akan diedit).
 
 2. Mengambil Data Mahasiswa untuk Diedit
 
@@ -73,11 +73,11 @@ Shift Baru: Shift C
    
 4. Mengirim Perubahan ke Server
 
-  Setelah perubahan dilakukan, pengguna menekan tombol `Edit Mahasiswa`, yang memanggil fungsi `editMahasiswa()`. Di dalam fungsi ini, data mahasiswa baru (id, nama, jurusan) dikirim ke server menggunakan `apiService.edit()` (endpoint `edit.php`).
+   Setelah perubahan dilakukan, pengguna menekan tombol `Edit Mahasiswa`, yang memanggil fungsi `editMahasiswa()`. Di dalam fungsi ini, data mahasiswa baru (id, nama, jurusan) dikirim ke server menggunakan `apiService.edit()` (endpoint `edit.php`).
 
 5. Feedback ke Pengguna
    
-  Jika proses edit berhasil, pesan konfirmasi akan ditampilkan dan daftar mahasiswa diperbarui. Modal kemudian ditutup.
+   Jika proses edit berhasil, pesan konfirmasi akan ditampilkan dan daftar mahasiswa diperbarui. Modal kemudian ditutup.
 
 ## Cara Kerja Delete (Hapus Data Mahasiswa)
 
@@ -87,7 +87,7 @@ Shift Baru: Shift C
 
 1. Tombol Hapus
    
-  Setiap data mahasiswa yang ditampilkan memiliki tombol `Hapus`. Ketika tombol ini diklik, fungsi `hapusMahasiswa(item.id)` dipanggil.
+   Setiap data mahasiswa yang ditampilkan memiliki tombol `Hapus`. Ketika tombol ini diklik, fungsi `hapusMahasiswa(item.id)` dipanggil.
 
 2. Konfirmasi Penghapusan
 
@@ -95,15 +95,15 @@ Shift Baru: Shift C
 
 3. Menghapus Data dari Server
 
-  Jika pengguna memilih Ya, maka data mahasiswa akan dihapus dari server menggunakan `apiService.hapus()` dengan mengirimkan ID mahasiswa ke endpoint `hapus.php?id=`.
+   Jika pengguna memilih Ya, maka data mahasiswa akan dihapus dari server menggunakan `apiService.hapus()` dengan mengirimkan ID mahasiswa ke endpoint `hapus.php?id=`.
 
 4. Feedback ke Pengguna
 
-  Jika penghapusan berhasil, daftar mahasiswa diperbarui untuk menghilangkan data yang baru saja dihapus.
+   Jika penghapusan berhasil, daftar mahasiswa diperbarui untuk menghilangkan data yang baru saja dihapus.
 
 ### Fungsi Tambahan
 
-Alert Feedback: Fungsi showAlert memberikan notifikasi atau konfirmasi kepada pengguna. Ini dipanggil setelah setiap operasi berhasil atau gagal. Alert ini memiliki judul (header) dan pesan (message) yang berbeda sesuai konteks.
+  Alert Feedback: Fungsi showAlert memberikan notifikasi atau konfirmasi kepada pengguna. Ini dipanggil setelah setiap operasi berhasil atau gagal. Alert ini memiliki judul (header) dan pesan (message) yang berbeda sesuai konteks.
 
 ### Alur CRUD di Aplikasi
 
